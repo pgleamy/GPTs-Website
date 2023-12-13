@@ -83,11 +83,11 @@ function loadGPTEntries() {
         entryDiv.style.marginRight = 'auto'; // Centering the entry
 
         entryDiv.innerHTML = `
-        <div class="flex items-center"> <!-- Flex container -->
-            <a href="${entry.link}" class="flex-shrink-0 flex-grow-0 mr-4"> <!-- Fixed size and prevent shrinking/growing -->
-                <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full image-hover">
+        <div class="flex items-center flex-col md:flex-row"> <!-- Stack vertically on small screens, horizontally on medium and up -->
+            <a href="${entry.link}" class="flex-shrink-0 flex-grow-0 mb-2 md:mb-0 md:mr-4"> <!-- Adjust margin for mobile -->
+                <img src="${entry.iconURL}" alt="${entry.name}" class="w-24 h-24 md:w-32 md:h-32 rounded-full image-hover"> <!-- Smaller image on mobile -->
             </a>
-            <div class="flex-grow"> <!-- This div will grow to fill remaining space -->
+            <div class="flex-grow">
                 <a href="${entry.link}" class="hover:underline">
                     <h3 class="text-lg font-bold">${entry.name}</h3>
                 </a>
@@ -96,6 +96,7 @@ function loadGPTEntries() {
             </div>
         </div>
     `;
+
 
     
 
