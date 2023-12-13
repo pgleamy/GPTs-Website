@@ -83,7 +83,7 @@ function loadGPTEntries() {
         entryDiv.style.marginRight = 'auto'; // Centering the entry
 
         entryDiv.innerHTML = `
-            <div style="display: flex;">
+            <div>
                 <a href="${entry.link}">
                     <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
                 </a>
