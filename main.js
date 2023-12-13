@@ -25,7 +25,7 @@ const gptEntries = [
     {
         "name": "Alberta Family Law Information",
         "iconURL": "icons/albertafamilyinformation.png",
-        "description": "A public information service for Albertans. Always get the opinion of an experienced Alberta family lawyer before making any decisions. This is a basic starting point for information purposes. The AI can make mistakes, and RESPONSES ARE NOT LEGAL ADVICE! Patrick G. Leamy practiced family Law in Alberta for over 20 years. He is currently a non-practicing member of the Law Society of Alberta. He retired from law to pursue artificial intelligence application development. He feels strongly that Albertans should have easy access to basic information about family law issues in Alberta. This is one example of enabling that access.",
+        "description": "A public information service for Albertans. Always get the opinion of an experienced Alberta family lawyer before making any decisions. This is a basic starting point for information purposes. The AI can make mistakes, and RESPONSES ARE NOT LEGAL ADVICE! Patrick G. Leamy practiced family Law in Alberta for over 20 years. He is currently a non-practicing member of the Law Society of Alberta. He retired from law to pursue artificial intelligence application development. He feels strongly that Albertans should have easy access to basic information about family law issues in Alberta. This is one example of enabling that access using cutting edge technology.",
         "link": "https://chat.openai.com/g/g-01zRAPTnE-alberta-family-law-information",
         "popularity": 200,
         "style": {
