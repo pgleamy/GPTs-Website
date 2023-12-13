@@ -84,7 +84,7 @@ function loadGPTEntries() {
 
         entryDiv.innerHTML = `
                 <a href="${entry.link}">
-                    <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
+                    <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full image-hover">
                 </a>
                 <div>
                     <a href="${entry.link}" class="hover:underline">
