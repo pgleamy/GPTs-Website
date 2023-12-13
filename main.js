@@ -83,7 +83,6 @@ function loadGPTEntries() {
         entryDiv.style.marginRight = 'auto'; // Centering the entry
 
         entryDiv.innerHTML = `
-            <div>
                 <a href="${entry.link}">
                     <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
                 </a>
@@ -94,7 +93,6 @@ function loadGPTEntries() {
                     <p>${entry.description}</p>
                     <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
                 </div>
-            </div>
         `;
 
         container.appendChild(entryDiv);
