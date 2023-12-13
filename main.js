@@ -70,26 +70,5 @@ function closeModal() {
     document.getElementById("bookmarkModal").style.display = "none";
 }
 
-
-function checkOrientation() {
-    // Check if the height is greater than the width (indicative of portrait mode)
-    if (window.innerHeight > window.innerWidth) {
-        document.getElementById("landscapePrompt").style.display = "flex";
-    } else {
-        document.getElementById("landscapePrompt").style.display = "none";
-    }
-}
-
-// Check the orientation periodically, in case events don't catch it
-//setInterval(checkOrientation, 1000); // checks every second
-
-// Listen for orientation changes as well as resize events
-//window.addEventListener("orientationchange", checkOrientation);
-//window.addEventListener("resize", checkOrientation); // Added to handle cases where orientationchange might not be enough
-
-// Initial check
-//checkOrientation();
-
-
 loadGPTEntries();
 
