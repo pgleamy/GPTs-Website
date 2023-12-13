@@ -45,7 +45,7 @@ const gptEntries = [
         }
     },
     {
-        "name": "Shakespeare 2.0 (all characters)",
+        "name": "Skakespeare 2.0 (all characters)",
         "iconURL": "icons/Shakespeare.png",
         "description": "A valuable educational resource focused on Shakespeare's works and characters. Shakespeare 2.0 will emulate characters from the Bard's works on request, and even engage in inter-character dialogues. You can even just chat with a character for fun if you like. Supports either old period English or a mix of modern and period English for increased understandability. The Bard himself oversees the output and exhibits a high attention to detail, realism and quality. Characters are emotive, expressive, engaging and sometimes humorous. Shakespeare 2.0 is a valuable classroom resource for teachers and students engaging with Shakespeare's works in a non-boring, thoughtful and interactive way.",
         "link": "https://chat.openai.com/g/g-8Tmt9LhaL-shakespeare-2-0-all-characters",
@@ -83,22 +83,17 @@ function loadGPTEntries() {
         entryDiv.style.marginRight = 'auto'; // Centering the entry
 
         entryDiv.innerHTML = `
-        <div class="flex items-center flex-col md:flex-row"> <!-- Stack vertically on small screens, horizontally on medium and up -->
-            <a href="${entry.link}" class="flex-shrink-0 flex-grow-0 mb-2 md:mb-0 md:mr-4"> <!-- Adjust margin for mobile -->
-                <img src="${entry.iconURL}" alt="${entry.name}" class="w-24 h-24 md:w-32 md:h-32 rounded-full image-hover"> <!-- Smaller image on mobile -->
-            </a>
-            <div class="flex-grow">
-                <a href="${entry.link}" class="hover:underline">
-                    <h3 class="text-lg font-bold">${entry.name}</h3>
+                <a href="${entry.link}">
+                    <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
                 </a>
-                <p>${entry.description}</p>
-                <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
-            </div>
-        </div>
-    `;
-
-
-    
+                <div>
+                    <a href="${entry.link}" class="hover:underline">
+                        <h3 class="text-lg font-bold">${entry.name}</h3>
+                    </a>
+                    <p>${entry.description}</p>
+                    <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
+                </div>
+        `;
 
         container.appendChild(entryDiv);
     });
