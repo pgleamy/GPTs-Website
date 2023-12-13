@@ -33,7 +33,6 @@
 <style>
     body {
         background: url('icons/background.png') no-repeat center center fixed;
-        background-color: black;
         background-size: cover;
     }
 
@@ -119,6 +118,9 @@
            only screen and (max-width: 768px) and (min-resolution: 2dppx) {
         .gpt-entry img {
             width: 50%; /* Adjust for Retina displays */
+        }
+        body {
+            background-size: cover; /* Ensure the background covers the entire viewport */
         }
     }
 
