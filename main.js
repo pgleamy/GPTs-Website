@@ -71,6 +71,23 @@ function closeModal() {
 }
 
 
+function checkOrientation() {
+    if (window.innerHeight > window.innerWidth) {
+        // Portrait mode
+        document.getElementById("landscapePrompt").style.display = "flex";
+    } else {
+        // Landscape mode
+        document.getElementById("landscapePrompt").style.display = "none";
+    }
+}
+
+// Listen for orientation changes
+window.addEventListener("orientationchange", checkOrientation);
+
+// Initial check
+checkOrientation();
+
+
 
 loadGPTEntries();
 
