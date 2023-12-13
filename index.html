@@ -150,6 +150,31 @@
             text-align: center;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .gpt-entry {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center-align items */
+        }
+    
+        .gpt-entry img {
+            width: 50%; /* Reduce image size to 50% */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add some space below the image */
+        }
+
+        /* Target high-density (Retina) displays */
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+    only screen and (min--moz-device-pixel-ratio: 2), 
+    only screen and (-o-min-device-pixel-ratio: 2/1), 
+    only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi), 
+    only screen and (min-resolution: 2dppx) {
+ .gpt-entry img {
+     width: 100%; /* Adjust for Retina displays */
+ }
+    }
+    
     
 
 </style>
