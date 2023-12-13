@@ -80,6 +80,9 @@ function checkOrientation() {
     }
 }
 
+// Check the orientation periodically, in case events don't catch it
+setInterval(checkOrientation, 1000); // checks every second
+
 // Listen for orientation changes as well as resize events
 window.addEventListener("orientationchange", checkOrientation);
 window.addEventListener("resize", checkOrientation); // Added to handle cases where orientationchange might not be enough
