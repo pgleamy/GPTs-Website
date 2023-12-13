@@ -84,10 +84,10 @@ function loadGPTEntries() {
 
         entryDiv.innerHTML = `
         <div class="flex items-center"> <!-- Flex container -->
-            <a href="${entry.link}" class="flex-shrink-0"> <!-- Prevent image from stretching -->
-                <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
+            <a href="${entry.link}" class="flex-shrink-0 flex-grow-0 mr-4" style="min-width: 128px;"> <!-- Fixed size and prevent shrinking/growing -->
+                <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full image-hover">
             </a>
-            <div>
+            <div class="flex-grow"> <!-- This div will grow to fill remaining space -->
                 <a href="${entry.link}" class="hover:underline">
                     <h3 class="text-lg font-bold">${entry.name}</h3>
                 </a>
@@ -96,6 +96,7 @@ function loadGPTEntries() {
             </div>
         </div>
     `;
+
     
 
         container.appendChild(entryDiv);
