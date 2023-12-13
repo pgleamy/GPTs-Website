@@ -45,7 +45,7 @@ const gptEntries = [
         }
     },
     {
-        "name": "Skakespeare 2.0 (all characters)",
+        "name": "Shakespeare 2.0 (all characters)",
         "iconURL": "icons/Shakespeare.png",
         "description": "A valuable educational resource focused on Shakespeare's works and characters. Shakespeare 2.0 will emulate characters from the Bard's works on request, and even engage in inter-character dialogues. You can even just chat with a character for fun if you like. Supports either old period English or a mix of modern and period English for increased understandability. The Bard himself oversees the output and exhibits a high attention to detail, realism and quality. Characters are emotive, expressive, engaging and sometimes humorous. Shakespeare 2.0 is a valuable classroom resource for teachers and students engaging with Shakespeare's works in a non-boring, thoughtful and interactive way.",
         "link": "https://chat.openai.com/g/g-8Tmt9LhaL-shakespeare-2-0-all-characters",
