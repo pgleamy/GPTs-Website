@@ -3,7 +3,7 @@ const gptEntries = [
     {
         "name": "Codie System ~ Code & Webpage Generation",
         "iconURL": "icons/codie.png",
-        "description": "Codie is a systematic webpage & code assistant using advanced techniques to QUICKLY produce and iterate on organized high quality code & webpages. The development process is logical, organized, recursive (at the user's direction) and iterative. Codie System is not a toy. It accelerates serious work. This page was developed collaboratively with Codie System.",
+        "description": "Codie is a systematic webpage & code assistant using advanced techniques to QUICKLY produce and iterate on code & webpages or both. The development process is logical, organized, recursive (at the user's direction) and iterative. Codie System is not a toy. It accelerates serious work. This page was developed collaboratively with Codie System.",
         "link": "https://chat.openai.com/g/g-ULdNDTnW1-codie-system",
         "popularity": 300,
         "style": {
