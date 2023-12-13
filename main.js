@@ -35,7 +35,7 @@ const gptEntries = [
     },
     {
         "name": "Economics Expert",
-        "iconURL": "icons/Economics.png",
+        "iconURL": "icons/Economics.jpg",
         "description": "Economic theory applied to: discussion, current events, historical trends, anything imaginable, and with a little bit of personality thrown in too. You can ask it for economically relevant news from the past 24 hours, or whatever you like. You can also use it as an educational resource on economics theory and issues. Have fun while you learn and become more informed.",
         "link": "https://chat.openai.com/g/g-cAiKH9eWH-economics-expert-gpt",
         "popularity": 150,
