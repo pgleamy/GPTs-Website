@@ -72,21 +72,20 @@ function closeModal() {
 
 
 function checkOrientation() {
+    // Check if the height is greater than the width (indicative of portrait mode)
     if (window.innerHeight > window.innerWidth) {
-        // Portrait mode
         document.getElementById("landscapePrompt").style.display = "flex";
     } else {
-        // Landscape mode
         document.getElementById("landscapePrompt").style.display = "none";
     }
 }
 
-// Listen for orientation changes
+// Listen for orientation changes as well as resize events
 window.addEventListener("orientationchange", checkOrientation);
+window.addEventListener("resize", checkOrientation); // Added to handle cases where orientationchange might not be enough
 
 // Initial check
 checkOrientation();
-
 
 
 loadGPTEntries();
