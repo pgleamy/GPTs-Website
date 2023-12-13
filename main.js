@@ -83,17 +83,20 @@ function loadGPTEntries() {
         entryDiv.style.marginRight = 'auto'; // Centering the entry
 
         entryDiv.innerHTML = `
-                <a href="${entry.link}">
-                    <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
+        <div class="flex items-center"> <!-- Flex container -->
+            <a href="${entry.link}" class="flex-shrink-0"> <!-- Prevent image from stretching -->
+                <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4 image-hover">
+            </a>
+            <div>
+                <a href="${entry.link}" class="hover:underline">
+                    <h3 class="text-lg font-bold">${entry.name}</h3>
                 </a>
-                <div>
-                    <a href="${entry.link}" class="hover:underline">
-                        <h3 class="text-lg font-bold">${entry.name}</h3>
-                    </a>
-                    <p>${entry.description}</p>
-                    <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
-                </div>
-        `;
+                <p>${entry.description}</p>
+                <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
+            </div>
+        </div>
+    `;
+    
 
         container.appendChild(entryDiv);
     });
