@@ -31,13 +31,20 @@
 </html>
 
 <style>
-    html {
-        background-color: black; 
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black; /* Fallback color */
     }
 
     body {
         background: url('icons/background.png') no-repeat center center fixed;
+        background-attachment: fixed;
         background-size: cover;
+        -webkit-background-size: cover; /* For Safari and older Chrome browsers */
+        -moz-background-size: cover; /* For older Firefox browsers */
+        -o-background-size: cover; /* For older Opera browsers */
     }
 
     main, header, footer {
@@ -127,7 +134,7 @@
         body {
             background-size: cover; /* Ensure the background covers the entire viewport */
             background-color: black; 
-            background-attachment: scroll;
+            background-attachment: fixed;
         }
         html {
             background-color: black;
