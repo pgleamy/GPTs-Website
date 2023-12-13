@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miracle Worker GPTs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="text-center p-2 transparent">
+        <h1 class="text-3xl font-thin">Select your miracle worker ...</h1>
+        <button onclick="showModal()" class="bookmark-button">(click here to bookmark this page)</button>
+    </header>
+    <main id="gpt-list" class="p-4">
+        <!-- GPT entries will be loaded here -->
+    </main>
+    <footer class="text-center p-1 transparent">
+        <p>&copy; 2023 PNLeamy Holdings Inc.</p>
+    </footer>
+
+    <!-- Custom Modal -->
+    <div id="bookmarkModal" class="bookmark-modal">
+        <div class="bookmark-modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>To bookmark this page, press Ctrl+D (Cmd+D on Mac). Thank you for your support of my work 😀!!</p>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        background: url('icons/background.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    main, header, footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.5px);    
+        /* Webkit prefix for Safari 9+ and iOS Safari 9+ */
+        -webkit-backdrop-filter: blur(0.5px);
+        color: rgba(255, 205, 135, 1
+        );
+       
+
+    }
+
+    .bookmark-modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 270px;
+        height: 140px;
+        overflow: hidden; 
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+    .bookmark-modal-content {
+        background-color: #a3d1ff;
+        margin: 10px auto;
+        padding: 10px;
+        border: 3px solid #eae6e6;
+        width: 250px;
+    }
+    
+    .close {
+        position: absolute;
+        top: -15px;
+        right: 2px;
+        padding: 10px;
+        color: #aaa;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #gpt-list .gpt-entry {
+        opacity: 0.9; /* Default opacity */
+        transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+    }
+    
+    #gpt-list .gpt-entry:hover {
+        opacity: 1.0; /* Full opacity on hover */
+    }
+    
+
+</style>
