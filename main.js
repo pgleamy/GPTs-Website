@@ -88,7 +88,7 @@ window.addEventListener("orientationchange", checkOrientation);
 window.addEventListener("resize", checkOrientation); // Added to handle cases where orientationchange might not be enough
 
 // Initial check
-//checkOrientation();
+checkOrientation();
 
 
 loadGPTEntries();
