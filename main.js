@@ -103,5 +103,14 @@ function closeModal() {
     document.getElementById("bookmarkModal").style.display = "none";
 }
 
+function trackLinkClick(gptName) {
+    // Replace with your Google Analytics tracking code
+    gtag('event', 'click', {
+        'event_category': 'GPT Link',
+        'event_label': gptName
+    });
+}
+
+
 loadGPTEntries();
 
