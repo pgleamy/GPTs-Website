@@ -85,9 +85,9 @@ function loadGPTEntries() {
         entryDiv.innerHTML = `
             <img src="${entry.iconURL}" alt="${entry.name}" class="w-32 h-32 rounded-full mr-4">
             <div>
-                <a href=${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">${entry.name} </a>
+                <a href=${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">${entry.name}</a>
                 <p>${entry.description}</p>
-                <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline" >USE THIS GPT</a>
+                <a href="${entry.link}" style="color: ${entry.style.textColor}; font-weight: bold" class="hover:underline">USE THIS GPT</a>
             </div>
         `;
 
