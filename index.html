@@ -12,9 +12,9 @@
 <body class="bg-gray-100">
     <header class="text-center p-2 transparent">
         <h1 class="text-3xl font-thin">Select your miracle worker ...</h1>
-        <button onclick="showModal()" class="bookmark-button">Bookmark Page</button>
+        <button onclick="showModal()" class="bookmark-button" onclick="trackClickEvent('BookmarkedPage', 'Click', 'BookmarkedPage');">Bookmark Page</button>
 
-        <a href="https://buy.stripe.com/4gw9CabfTaMb8zCeUU" class="stripe-tip-link" target="_blank" rel="noopener">LEAVE ME A TIP</a>
+        <a href="https://buy.stripe.com/4gw9CabfTaMb8zCeUU" class="stripe-tip-link" target="_blank" rel="noopener" onclick="trackClickEvent('LeaveATip', 'Click', 'LeaveATip');">LEAVE ME A TIP</a>
 
     </header>
     <main id="gpt-list" class="p-4">
@@ -33,8 +33,10 @@
     </div>
 
     <script src="main.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSM89EZPQX"></script>
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -42,6 +44,16 @@
 
     gtag('config', 'G-GSM89EZPQX');
     </script>
+
+    <script> 
+        function trackClickEvent(category, action, label) {
+            gtag('event', action, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+    </script>
+
 </body>
 </html>
 
