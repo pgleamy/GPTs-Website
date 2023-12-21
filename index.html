@@ -10,6 +10,9 @@
     <header class="text-center p-2 transparent">
         <h1 class="text-3xl font-thin">Select your miracle worker ...</h1>
         <button onclick="showModal()" class="bookmark-button">(click here to bookmark this page)</button>
+
+        <a href="https://buy.stripe.com/4gw9CabfTaMb8zCeUU" class="stripe-tip-link" target="_blank" rel="noopener">LEAVE ME A TIP</a>
+
     </header>
     <main id="gpt-list" class="p-4">
         <!-- GPT entries will be loaded here -->
@@ -138,5 +141,32 @@
             background-color: black;
         }
     }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .header-content {
+        text-align: center;
+    }
+    
+    .stripe-tip-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00a676; /* Stripe's brand color, or choose your own */
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .stripe-tip-link:hover {
+        background-color: #008c63; /* Darker shade for hover effect */
+    }
+    
 
 </style>
